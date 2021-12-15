@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,12 +8,17 @@ import { Component } from '@angular/core';
 })
 export class ToolbarComponent {
   tabs = [
-    { name: 'Home' },
-    { name: 'Skills' },
-    { name: 'Experience' },
-    { name: 'Education' },
-    { name: 'Languages' },
-    { name: 'Courses' },
-    { name: 'Contact' }
+    { name: 'skills' },
+    { name: 'experience' },
+    { name: 'education' },
+    { name: 'languages' },
+    { name: 'courses' },
+    { name: 'contact' }
   ];
+
+  constructor(private _router: Router) {}
+
+  navigate(url: string): void {
+    this._router.navigate([`/${url}`]);
+  }
 }

@@ -1,6 +1,10 @@
 <mat-toolbar class="main-toolbar">
+  <span class="tab" routerLink='/'>
+    Home
+  </span>
   <span *ngFor="let tab of tabs"
+        (click)="navigate(tab.name)"
         class="tab">
-    {{tab.name}}
+    {{tab.name | titlecase }}
   </span>
 </mat-toolbar>

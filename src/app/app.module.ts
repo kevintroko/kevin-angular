@@ -6,11 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { LanguagesComponent } from './components/languages/languages.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    EducationComponent,
+    LanguagesComponent,
+    CoursesComponent,
+    ContactComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
