@@ -14,6 +14,7 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrownButtonComponent } from './components/reusable/brown-button/brown-button.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomeComponent } from './components/home/home.component';
     CoursesComponent,
     ContactComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    BrownButtonComponent
   ],
   imports: [
     BrowserModule,
