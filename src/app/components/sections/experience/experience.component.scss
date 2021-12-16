@@ -11,7 +11,7 @@ main {
   min-height: 40px;
   height: 5vh;
   max-height: 60px;
-  padding: 18px;
+  padding: 18px calc(18px + 1em);
   border-radius: 10px;
   display: flex;
 
@@ -19,6 +19,7 @@ main {
     width: 300px;
 
     .dates {
+      margin-top: 2px;
       color: $primary;
     }
   }

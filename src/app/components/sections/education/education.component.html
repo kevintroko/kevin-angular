@@ -6,8 +6,9 @@
     <div class="university-info">
       <div class="degree">{{university.degree}}</div>
       <div class="name">{{university.name}}</div>
-      <div class="city">{{university.city}}</div>
-      <div class="date">{{university.date}} {{university.country}}</div>
+      <div>{{university.city}}</div>
+      <div class="fill-space"></div>
+      <div>{{university.date}} {{university.country}}</div>
     </div>
     <div class="picture"
           [ngStyle]="{ 'background-image': 'url(' + university.url + ')' }">
