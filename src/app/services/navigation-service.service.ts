@@ -3,7 +3,14 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class NavigationServiceService {
+export class NavigationService {
+  private _currentRoute: string = '';
 
-  constructor() { }
+  setCurrentRoute(route: string): void {
+    this._currentRoute = route;
+  }
+
+  getCurrentRoute(): string {
+    return this._currentRoute;
+  }
 }
