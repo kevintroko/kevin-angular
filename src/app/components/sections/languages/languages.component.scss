@@ -1,0 +1,43 @@
+@import '../../../../variables';
+
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+
+  .language {
+    background-color: $accent;
+    width: 30%;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+    padding: 24px 0;
+
+    .name {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 9px;
+    }
+
+    .level {
+      color: $primary;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .emoji {
+      position: absolute;
+      bottom: 24px;
+      font-size: 48px;
+      left: calc(50% - 24px);
+    }
+
+    .details {
+      padding: 0 24px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+}

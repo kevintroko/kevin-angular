@@ -2,8 +2,15 @@
   <header class="title">Languages</header>
 
   <main class="experience-container">
-    <div *ngFor="let language of languages">
-      {{language.name}} {{language.emoji}}
+    <div *ngFor="let language of languages"
+         class="language">
+      <div class="name">{{language.name}}</div>
+      <div class="level">{{language['level']}}</div>
+      <div *ngFor="let detail of language['details']"
+           class="details">
+        {{detail.title}}
+      </div>
+      <div class="emoji">{{language.emoji}}</div>
     </div>
   </main>
 </div>

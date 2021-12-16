@@ -1,3 +1,4 @@
+import { Language } from './../../../models/language';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./languages.component.scss']
 })
 export class LanguagesComponent {
-  languages = [
+  languages: Language[] = [
     {
       name: 'Spanish',
       level: 'Native',
