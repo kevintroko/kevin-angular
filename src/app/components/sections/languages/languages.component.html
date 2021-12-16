@@ -3,7 +3,7 @@
 
   <main class="experience-container">
     <div *ngFor="let language of languages"
-         class="language">
+         class="language mat-elevation-z4">
       <div class="name">{{language.name}}</div>
       <div class="level">{{language['level']}}</div>
       <div *ngFor="let detail of language['details']"

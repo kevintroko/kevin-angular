@@ -7,10 +7,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: $gap;
-
 }
 
 .section-container {
+  position: relative;
+
   .skills-container {
     margin: 2em 0;
     @include setContainer(1rem);

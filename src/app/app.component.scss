@@ -1,13 +1,18 @@
 @import '../variables';
 
-@mixin format-cirle($color, $size, $left, $bottom) {
+@mixin format-cirle($color, $size, $left, $bottom, $isTop: false) {
   position: fixed;
   width: $size;
   height: $size;
   border-radius: 50%;
   border: 20px solid $color;
-  left: $left;
-  bottom: $bottom;
+  @if ($isTop) {
+    right: $left;
+    top: $bottom;
+  } @else {
+    left: $left;
+    bottom: $bottom;
+  }
   overflow: hidden;
 }
 
@@ -17,4 +22,13 @@
 
 .haloBrown {
   @include format-cirle($darkBrown, 150px, 50px, -100px);
+}
+
+.haloTopBlue {
+  @include format-cirle($primary, 200px, -100px, -110px, true);
+}
+
+.haloTopBrown {
+  @include format-cirle($darkBrown, 150px, 50px, -40px, true);
+  z-index: 0;
 }

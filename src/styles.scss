@@ -16,6 +16,9 @@ body {
   font-weight: bold;
   line-height: 38px;
   margin-bottom: 24px;
+  position: relative;
+  background-color: $background;
+  display: inline-block;
 }
 
 .section-container {
