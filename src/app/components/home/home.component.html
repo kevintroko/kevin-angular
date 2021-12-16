@@ -1,16 +1,16 @@
 <div class="container">
   <div class="left-part">
-    <h1>Hej, Jag Heter Kevin</h1>
+    <div class="title">Hej, Jag Heter Kevin</div>
     <p>
       I am a software engineer from Guadalajara, Mexico. I'm specialised in web development
       and I'm looking forward to grow as an engineer.
     </p>
-    <button>Continue</button>
-    <button routerLink="/contact">Continue</button>
+    <app-brown-button text="Continue"></app-brown-button>
+    <app-brown-button text="Contact" routerLink="/contact"></app-brown-button>
   </div>
   <div class="right-part">
-    <div class="img-container">
-      <img alt="photo of kevin" src="../../../assets/kevin_photo.jpg">
-    </div>
+    <img class="picture mat-elevation-z4"
+         alt="photo of kevin"
+         src="../../../assets/kevin_photo.jpg">
   </div>
 </div>
