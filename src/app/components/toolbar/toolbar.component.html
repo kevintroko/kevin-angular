@@ -1,7 +1,14 @@
 <mat-toolbar class="main-toolbar mat-elevation-z4">
-  <span class="tab" routerLink='/'>
+  <mat-icon class="burger-icon"
+            matRipple>
+    menu
+  </mat-icon>
+  <span class="home" routerLink='/'>
     Home
   </span>
+
+  <div class="fill-space"></div>
+
   <span *ngFor="let tab of tabs"
         (click)="navigate(tab.name)"
         class="tab"

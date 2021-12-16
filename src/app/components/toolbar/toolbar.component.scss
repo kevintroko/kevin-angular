@@ -1,35 +1,55 @@
 @import '../../../variables';
 
+@mixin formatTab($width) {
+  width: $width;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .main-toolbar {
   justify-content: flex-end;
   background-color: $primary;
   color: white;
 
+  .fill-space {
+    flex: 1;
+  }
+
+  .home {
+    margin-left: 1em;
+    @include formatTab(50px);
+  }
+
   .tab {
-    width: 50px;
-    display: inline-block;
-    cursor: pointer;
-
-    &:first-child {
-      flex: 1;
-      margin-left: 1em;
-    }
-
-    &:not(:first-child) {
-      width: 100px;
-      display: inline-block;
-      text-align: center;
-      font-weight: normal;
-      font-size: 16px;
-      padding: 16px 8px;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
+    @include formatTab(100px);
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 16px 8px;
 
     &.active {
       background-color: $darkBlue;
+    }
+  }
+
+  .burger-icon {
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-toolbar {
+    .tab, .home {
+        display: none;
+    }
+
+    .burger-icon {
+      display: block;
     }
   }
 }
