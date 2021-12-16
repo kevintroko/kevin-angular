@@ -15,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrownButtonComponent } from './components/reusable/brown-button/brown-button.component';
+import { ButtonsBottomBarComponent } from './components/reusable/buttons-bottom-bar/buttons-bottom-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrownButtonComponent } from './components/reusable/brown-button/brown-b
     ContactComponent,
     NotFoundComponent,
     HomeComponent,
-    BrownButtonComponent
+    BrownButtonComponent,
+    ButtonsBottomBarComponent
   ],
   imports: [
     BrowserModule,
