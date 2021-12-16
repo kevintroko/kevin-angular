@@ -29,7 +29,7 @@ export class ContactComponent {
     },
     {
       name: 'Blog',
-      icon: 'rss_feed',
+      icon: 'wysiwyg',
       value: ''
     }
   ];
