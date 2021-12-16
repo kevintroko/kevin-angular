@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-brown-button',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class BrownButtonComponent {
   @Input() text: string = 'button';
+  @Output() clickEmitter: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  emitClick(): void {
+    this.clickEmitter.emit(true);
+  }
 }

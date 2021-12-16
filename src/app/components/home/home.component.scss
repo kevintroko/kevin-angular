@@ -15,24 +15,33 @@
       font-weight: lighter;
       line-height: 32px;
       margin-bottom: 32px;
+      margin-right: 24px;
     }
 
    .title {
      font-size: 38px;
      font-weight: bold;
-     margin-bottom: 38px;
+     margin-bottom: 32px;
+     margin-right: 24px;
+     line-height: 42px;
+   }
+
+   .btn {
+     display: block;
+     margin-bottom: 24px;
    }
   }
 
   .right-part {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 40%; // 10% margin 40% left part
 
     .picture {
       border: 25px solid $accent;
       border-radius: 10px;
-      width: 300px;
+      width: 80%;
+      max-width: 400px;
     }
   }
 }

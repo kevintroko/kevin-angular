@@ -1,0 +1,20 @@
+@import 'src/variables';
+
+@mixin format-cirle($color, $size, $left, $bottom) {
+  position: fixed;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: 20px solid $color;
+  left: $left;
+  bottom: $bottom;
+  overflow: hidden;
+}
+
+.haloBlue {
+  @include format-cirle($primary, 200px, -100px, -100px);
+}
+
+.haloBrown {
+  @include format-cirle($darkBrown, 150px, 50px, -100px);
+}
