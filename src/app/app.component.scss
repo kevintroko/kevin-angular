@@ -1,4 +1,4 @@
-@import 'src/variables';
+@import '../variables';
 
 @mixin format-cirle($color, $size, $left, $bottom) {
   position: fixed;

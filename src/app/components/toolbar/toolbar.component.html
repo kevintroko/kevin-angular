@@ -1,10 +1,33 @@
-<mat-toolbar class="main-toolbar">
-  <span class="tab" routerLink='/'>
+<mat-toolbar class="main-toolbar mat-elevation-z4">
+
+  <!-- Menu for small screens -->
+  <mat-icon class="burger-icon"
+            matRipple
+            [matMenuTriggerFor]="menu">
+    menu
+  </mat-icon>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item
+            (click)="navigate('home')">
+            Home
+    </button>
+    <button mat-menu-item
+            (click)="navigate(tab.name)"
+            *ngFor="let tab of tabs">
+       {{tab.name | titlecase}}
+    </button>
+  </mat-menu>
+  <span class="home" routerLink='/'>
     Home
   </span>
+
+  <div class="fill-space"></div>
+
+  <!-- Menu for big screens -->
   <span *ngFor="let tab of tabs"
         (click)="navigate(tab.name)"
-        class="tab">
+        class="tab"
+        [class.active]="activeTab === tab.name">
     {{tab.name | titlecase }}
   </span>
 </mat-toolbar>

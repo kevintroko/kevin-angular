@@ -1,0 +1,19 @@
+<div class="section-container">
+  <header class="title">Education</header>
+
+  <main class="education-container mat-elevation-z4"
+        *ngFor="let university of universities">
+    <div class="university-info">
+      <div class="degree">{{university.degree}}</div>
+      <div class="name">{{university.name}}</div>
+      <div>{{university.city}}</div>
+      <div class="fill-space"></div>
+      <div>{{university.date}} {{university.country}}</div>
+    </div>
+    <div class="picture"
+          [ngStyle]="{ 'background-image': 'url(' + university.url + ')' }">
+    </div>
+  </main>
+</div>
+
+<app-buttons-bottom-bar></app-buttons-bottom-bar>

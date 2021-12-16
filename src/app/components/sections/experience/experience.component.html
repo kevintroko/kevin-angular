@@ -1,0 +1,21 @@
+
+<div class="section-container">
+  <header class="title">Experience</header>
+  <main>
+    <div *ngFor="let experience of experiences"
+          class="experience-container mat-elevation-z4">
+      <!-- Left part -->
+      <div class="left-part">
+        <div>AstraZeneca, Guadalajara Mexico 🇲🇽</div>
+        <div class="dates">
+          <span>{{experience.startDate}}</span> - <span>{{experience.endDate}}</span>
+        </div>
+      </div>
+
+      <!-- Rigth part -->
+      <div class="right-part">{{experience.title}}</div>
+    </div>
+  </main>
+</div>
+
+<app-buttons-bottom-bar></app-buttons-bottom-bar>

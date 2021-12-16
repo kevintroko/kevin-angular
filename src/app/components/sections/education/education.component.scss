@@ -1,0 +1,60 @@
+@import '../../../../variables';
+
+.education-container {
+  background-color: $accent;
+  margin-bottom: 24px;
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  min-height: 150px;
+  height: 13vw;
+  position: relative;
+
+  .university-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    z-index: 1;
+
+    .degree {
+      font-weight: bold;
+    }
+
+    .name {
+      color: $primary;
+    }
+  }
+
+
+  .picture {
+      background-color: $darkBrown;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 50%;
+      min-height: 150px;
+      height: 13vw;
+      right: 0;
+      position: absolute;
+      padding-bottom: 36px;
+      margin-top: -18px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .education-container {
+    color: white;
+    background-color: $darkBrown;
+
+    .university-info .name {
+      color: $accent;
+    }
+
+    .picture {
+      opacity: 0.15;
+      width: 100%;
+    }
+  }
+}
