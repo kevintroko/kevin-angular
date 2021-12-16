@@ -1,6 +1,6 @@
 @import '../../../../variables';
 
-.education-container{
+.education-container {
   background-color: $accent;
   margin-bottom: 24px;
   padding: 18px;
@@ -40,5 +40,21 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .education-container {
+    color: white;
+    background-color: $darkBrown;
+
+    .university-info .name {
+      color: $accent;
+    }
+
+    .picture {
+      opacity: 0.15;
+      width: 100%;
+    }
   }
 }
