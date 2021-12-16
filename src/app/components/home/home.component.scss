@@ -42,7 +42,43 @@
       border-radius: 10px;
       width: 80%;
       max-width: 400px;
+      z-index: 1;
     }
   }
 }
 
+
+@media screen and (max-width: 650px) {
+  .container {
+    height: calc(100vh - 64px - 2em);
+    flex-direction: column;
+    margin: 2em 0 0 0;
+    justify-content: flex-start;
+
+    .left-part {
+      width: 80%;
+
+      p, .title {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .right-part .picture {
+      margin-bottom: 1em;
+    }
+  }
+}

@@ -1,1 +1,18 @@
+<div class="section-container">
+  <div class="title">Skills</div>
+
+  <div class="skills-container">
+    <div *ngFor="let skill of skills">
+      {{skill}}
+    </div>
+  </div>
+
+  <div class="subtitle">Others</div>
+  <div class="others">
+    <span *ngFor="let otherSkill of otherSkills">
+      {{otherSkill}}
+    </span>
+  </div>
+</div>
+
 <app-buttons-bottom-bar></app-buttons-bottom-bar>
