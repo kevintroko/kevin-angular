@@ -1,4 +1,4 @@
-@import 'src/variables';
+@import '../../../variables';
 
 .main-toolbar {
   justify-content: flex-end;
@@ -26,6 +26,10 @@
 
     &:hover {
       opacity: 0.8;
+    }
+
+    &.active {
+      background-color: $darkBlue;
     }
   }
 }
