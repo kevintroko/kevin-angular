@@ -11,14 +11,15 @@
     border-radius: 10px;
     text-align: center;
     position: relative;
-    min-height: 300px;
+    min-height: 350px;
     padding: 24px 0;
+    padding-bottom: 48px;
 
     .name {
       font-weight: bold;
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 9px;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 8px;
     }
 
     .level {
@@ -38,6 +39,22 @@
       padding: 0 24px;
       text-align: left;
       margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .experience-container {
+    flex-direction: column;
+
+    .language {
+      width: 100%;
+      min-height: 300px;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 150px;
+      }
     }
   }
 }
