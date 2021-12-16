@@ -3,6 +3,7 @@
                     (clickEmitter)="goBack()">
   </app-brown-button>
   <app-brown-button text="Next"
+                    *ngIf="index < tabs.length - 1"
                     (clickEmitter)="goNext()">
   </app-brown-button>
 </footer>
