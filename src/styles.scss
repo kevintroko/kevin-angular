@@ -28,3 +28,9 @@ body {
 .fill-space {
   flex: 1;
 }
+
+@media screen and (max-width: 800px) {
+  .add-space {
+    height: 100px;
+  }
+}

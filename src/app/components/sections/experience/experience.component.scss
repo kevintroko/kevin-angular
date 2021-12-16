@@ -14,9 +14,14 @@ main {
   padding: 18px calc(18px + 1em);
   border-radius: 10px;
   display: flex;
+  position: relative;
 
   .left-part {
     width: 300px;
+
+    .block {
+      display: inline-block;
+    }
 
     .dates {
       margin-top: 2px;
@@ -32,5 +37,29 @@ main {
     justify-content: flex-end;
     font-weight: bold;
     text-align: end;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    height: 65vh;
+  }
+  .experience-container {
+    height: 10vh;
+    max-height: 120px;
+    padding: 9px 12px;
+    flex-direction: column;
+    margin-bottom: 14px;
+
+    .left-part {
+      width: 250px;
+      font-size: 13px;
+    }
+
+    .right-part {
+      font-size: 13px;
+      justify-content: flex-start;
+      text-align: left;
+    }
   }
 }
