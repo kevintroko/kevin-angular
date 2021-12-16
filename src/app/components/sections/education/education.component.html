@@ -1,9 +1,16 @@
 <div class="section-container">
   <header class="title">Education</header>
 
-  <main class="education-container">
-    <div *ngFor="let university of universities">
-      {{university}}
+  <main class="education-container"
+        *ngFor="let university of universities">
+    <div class="university-info">
+      <div class="degree">{{university.degree}}</div>
+      <div class="name">{{university.name}}</div>
+      <div class="city">{{university.city}}</div>
+      <div class="date">{{university.date}} {{university.country}}</div>
+    </div>
+    <div class="picture"
+          [ngStyle]="{ 'background-image': 'url(' + university.url + ')' }">
     </div>
   </main>
 </div>

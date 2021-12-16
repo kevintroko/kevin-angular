@@ -1,0 +1,26 @@
+@import '../../../../variables';
+
+.education-container{
+  background-color: $accent;
+  margin-bottom: 24px;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  height: 130px;
+  position: relative;
+
+  .picture {
+      background-color: $darkBrown;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 50%;
+      height: 130px;
+      right: 0;
+      position: absolute;
+      padding-bottom: 2em;
+      margin-top: -1em;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+}
