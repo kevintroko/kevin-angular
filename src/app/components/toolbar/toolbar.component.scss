@@ -1,0 +1,31 @@
+@import 'src/variables';
+
+.main-toolbar {
+  justify-content: flex-end;
+  background-color: $primary;
+  color: white;
+
+  .tab {
+    width: 50px;
+    display: inline-block;
+    cursor: pointer;
+
+    &:first-child {
+      flex: 1;
+      margin-left: 1em;
+    }
+
+    &:not(:first-child) {
+      width: 100px;
+      display: inline-block;
+      text-align: center;
+      font-weight: normal;
+      font-size: 16px;
+      padding: 16px 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

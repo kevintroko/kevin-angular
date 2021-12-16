@@ -1,0 +1,48 @@
+@import 'src/variables';
+
+.container {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 64px);
+  justify-content: center;
+  margin: 0 10%;
+
+  .left-part {
+    width: 40%;
+
+    p {
+      font-size: 24px;
+      font-weight: lighter;
+      line-height: 32px;
+      margin-bottom: 32px;
+      margin-right: 24px;
+    }
+
+   .title {
+     font-size: 38px;
+     font-weight: bold;
+     margin-bottom: 32px;
+     margin-right: 24px;
+     line-height: 42px;
+   }
+
+   .btn {
+     display: block;
+     margin-bottom: 24px;
+   }
+  }
+
+  .right-part {
+    display: flex;
+    justify-content: center;
+    width: 40%; // 10% margin 40% left part
+
+    .picture {
+      border: 25px solid $accent;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 400px;
+    }
+  }
+}
+
