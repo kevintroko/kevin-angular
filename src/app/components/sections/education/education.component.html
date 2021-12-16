@@ -3,6 +3,7 @@
 
   <main class="education-container mat-elevation-z4"
         *ngFor="let university of universities">
+    <!-- Right panel -->
     <div class="university-info">
       <div class="degree">{{university.degree}}</div>
       <div class="name">{{university.name}}</div>
@@ -10,6 +11,7 @@
       <div class="fill-space"></div>
       <div>{{university.date}} {{university.country}}</div>
     </div>
+    <!-- Right panel -->
     <div class="picture"
           [ngStyle]="{ 'background-image': 'url(' + university.url + ')' }">
     </div>

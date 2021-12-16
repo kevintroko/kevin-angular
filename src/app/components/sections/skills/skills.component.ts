@@ -16,12 +16,12 @@ export class SkillsComponent {
     'HTML',
     'SCSS',
     'PostgreSQL',
-    'JUnit5',
-    'Jasmine',
     'Python'
   ];
   otherSkills = [
     'GIT',
+    'JUnit5',
+    'Jasmine',
     'Mocha',
     'Jira',
     'Confluence',
@@ -29,7 +29,7 @@ export class SkillsComponent {
     'Cypress',
     'Docker',
     'Postman',
-    'Agile methodologies',
+    'Agile',
     'AdobeXD',
     'Zapworks Studio',
     'Power Apps',

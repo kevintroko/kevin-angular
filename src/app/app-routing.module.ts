@@ -10,7 +10,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'skills' , component: SkillsComponent },
   { path: 'experience' , component: ExperienceComponent },
@@ -18,7 +17,7 @@ const routes: Routes = [
   { path: 'languages' , component: LanguagesComponent },
   { path: 'courses' , component: CoursesComponent },
   { path: 'contact', component:  ContactComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

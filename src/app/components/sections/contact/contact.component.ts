@@ -6,5 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  contactInfo = [];
+  contactInfo = [
+    {
+      name: 'Email',
+      icon: 'mail',
+      value: ''
+    },
+    {
+      name: 'Github',
+      icon: 'code',
+      value: ''
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'business_center',
+      value: ''
+    },
+    {
+      name: 'StackOverflow',
+      icon: 'help_center',
+      value: ''
+    },
+    {
+      name: 'Blog',
+      icon: 'wysiwyg',
+      value: ''
+    }
+  ];
 }

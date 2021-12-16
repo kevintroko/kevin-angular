@@ -1,0 +1,60 @@
+@import '../../../../variables';
+
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+
+  .language {
+    background-color: $accent;
+    width: 30%;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 350px;
+    padding: 24px 0;
+    padding-bottom: 48px;
+
+    .name {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+
+    .level {
+      color: $primary;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .emoji {
+      position: absolute;
+      bottom: 24px;
+      font-size: 48px;
+      left: calc(50% - 24px);
+    }
+
+    .details {
+      padding: 0 24px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .experience-container {
+    flex-direction: column;
+
+    .language {
+      width: 100%;
+      min-height: 300px;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 150px;
+      }
+    }
+  }
+}

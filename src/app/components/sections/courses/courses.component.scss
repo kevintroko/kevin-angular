@@ -1,0 +1,47 @@
+@import '../../../../variables';
+
+.course-container {
+  background-color: $accent;
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  position: relative;
+
+  .information {
+    width: 250px;
+    padding: 16px;
+    min-height: 80px;
+
+    .name {
+      font-weight: bold;
+    }
+
+    .company {
+      color: $primary
+    }
+  }
+
+  .description {
+    padding: 16px;
+    flex: 1;
+    background-color: $darkBrown;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .course-container {
+    flex-direction: column;
+
+    .information {
+      min-height: 60px;
+    }
+
+    .description {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+    }
+  }
+}
