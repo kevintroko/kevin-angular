@@ -14,22 +14,22 @@ export class ContactComponent {
     },
     {
       name: 'Github',
-      icon: '',
+      icon: 'code',
       value: ''
     },
     {
       name: 'LinkedIn',
-      icon: '',
+      icon: 'business_center',
       value: ''
     },
     {
       name: 'StackOverflow',
-      icon: '',
+      icon: 'help_center',
       value: ''
     },
     {
       name: 'Blog',
-      icon: '',
+      icon: 'rss_feed',
       value: ''
     }
   ];

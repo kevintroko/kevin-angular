@@ -2,8 +2,10 @@
   <header class="title">Contact</header>
 
   <main class="contact-container">
-    <div *ngFor="let contact of contactInfo">
-      {{contact.name}}
+    <div *ngFor="let contact of contactInfo"
+         class="contacts mat-elevation-z4">
+         <mat-icon>{{contact.icon}}</mat-icon>
+         <div class="name">{{contact.name}}</div>
     </div>
   </main>
 </div>
