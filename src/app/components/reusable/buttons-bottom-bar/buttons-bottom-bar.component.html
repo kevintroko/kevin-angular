@@ -1,4 +1,8 @@
 <footer class="bottom-container">
-  <app-brown-button></app-brown-button>
-  <app-brown-button></app-brown-button>
+  <app-brown-button text="Go Back"
+                    (clickEmitter)="goBack()">
+  </app-brown-button>
+  <app-brown-button text="Next"
+                    (clickEmitter)="goNext()">
+  </app-brown-button>
 </footer>

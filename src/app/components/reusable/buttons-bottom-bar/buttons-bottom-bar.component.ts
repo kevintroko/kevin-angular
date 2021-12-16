@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttons-bottom-bar',
   templateUrl: './buttons-bottom-bar.component.html',
   styleUrls: ['./buttons-bottom-bar.component.scss']
 })
-export class ButtonsBottomBarComponent implements OnInit {
+export class ButtonsBottomBarComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  goBack(): void {}
+
+  goNext(): void {}
 
 }
