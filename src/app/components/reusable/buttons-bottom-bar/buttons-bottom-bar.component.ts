@@ -23,7 +23,7 @@ export class ButtonsBottomBarComponent {
 
   goBack(): void {
     if (this.index) {
-      this._router.navigate([`${this.tabs[this.index - 1]?.name}`])
+      this._router.navigate([`${this.tabs[this.index - 1].name}`])
     } else {
       this._router.navigate(['/']);
     }
@@ -31,7 +31,7 @@ export class ButtonsBottomBarComponent {
 
   goNext(): void {
     if (this.index < this.tabs.length - 1) {
-      this._router.navigate([`${this.tabs[this.index + 1]?.name}`])
+      this._router.navigate([`${this.tabs[this.index + 1].name}`])
     }
   }
 }
