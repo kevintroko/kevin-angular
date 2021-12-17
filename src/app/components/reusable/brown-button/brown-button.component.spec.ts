@@ -22,4 +22,10 @@ describe('BrownButtonComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should emit click when triggered', () => {
+    const spy = spyOn(component.clickEmitter, 'emit');
+    component.emitClick();
+    expect(spy).toHaveBeenCalledWith(true);
+  });
 });
